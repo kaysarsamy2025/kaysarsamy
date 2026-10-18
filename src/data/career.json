@@ -1,0 +1,49 @@
+
+{
+  "career": [
+    {
+      "name": "KS Digital BD",
+      "href": "https://www.ksdigitalbd.com/",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Founder & Technology Business Builder",
+          "start": "Jun 2026",
+          "description": [
+            "Founded KS Digital BD to help businesses grow through digital branding, website development, software solutions, and digital innovation.",
+            "Leading business development, client relationships, project strategy, and digital solution delivery."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Raysensoft",
+      "href": "https://www.instagram.com/raysen_soft/",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Co-Founder",
+          "start": "Jan 2025",
+          "description": [
+            "Contributing to business development, technology initiatives, project planning, and the delivery of digital solutions."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FastSheba",
+      "href": "https://fastsheba.com.bd/",
+      "logo": "",
+      "positions": [
+        {
+          "title": "Chief Technology Officer (CTO)",
+          "start": "Jun 2026",
+          "description": [
+            "Leading technology strategy, technical decision-making, and the development of technology-enabled service solutions.",
+            "Overseeing technical execution and coordinating project delivery in alignment with business objectives."
+          ]
+        }
+      ]
+    }
+  ]
+}

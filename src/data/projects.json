@@ -1,0 +1,166 @@
+
+{
+  "projects": [
+    {
+      "name": "FastSheba — Multi-Service Platform",
+      "description": "A multi-service digital platform combining food delivery, pharmacy services, grocery shopping, and multi-vendor commerce, supported by a website, mobile apps, and management panels.",
+      "image": "/img/fastsheba.png",
+      "tags": [
+        "Web Development",
+        "Mobile Apps",
+        "E-commerce",
+        "Multi-Vendor Platform",
+        "Project Management"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://fastsheba.com.bd/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "RT Destination",
+      "description": "A travel and tourism website project focused on presenting the business online and showcasing its services.",
+      "image": "/img/rtdestination.png",
+      "tags": [
+        "Web Development",
+        "Travel",
+        "Business Website",
+        "UI/UX"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://rtdestination.com/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Alam Traders Global",
+      "description": "A business website project designed to establish a professional online presence and present the company's business offerings.",
+      "image": "/img/alam-traders-global.png",
+      "tags": [
+        "Web Development",
+        "Corporate Website",
+        "UI/UX",
+        "Digital Presence"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://alamtradersglobal.com/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Ecom Partners BD",
+      "description": "A professional business website project focused on presenting the company's services and strengthening its online presence.",
+      "image": "/img/ecom-partners-bd.png",
+      "tags": [
+        "Web Development",
+        "Business Website",
+        "UI/UX",
+        "Branding"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://ecompartnersbd.com/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Next Step BD",
+      "description": "A website project intended to support the business's online presence and communicate its services.",
+      "image": "/img/next-step-bd.png",
+      "tags": [
+        "Web Development",
+        "Business Website",
+        "UI/UX"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://nextstepbd.net/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "MyAswab — E-commerce",
+      "description": "An e-commerce website project focused on presenting products and supporting an online shopping experience.",
+      "image": "/img/myaswab.png",
+      "tags": [
+        "E-commerce",
+        "Web Development",
+        "WordPress",
+        "UI/UX"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://myaswab.com/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "KS Digital BD",
+      "description": "The digital presence of KS Digital BD, showcasing web development, digital branding, and technology services for businesses.",
+      "image": "/img/ks-digital-bd.png",
+      "tags": [
+        "Web Development",
+        "Digital Branding",
+        "Business Strategy",
+        "UI/UX"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://www.ksdigitalbd.com/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "Raysensoft",
+      "description": "A software and technology initiative focused on digital solutions and supporting business needs through technology.",
+      "image": "/img/raysensoft.png",
+      "tags": [
+        "Software Development",
+        "Technology",
+        "Project Management"
+      ],
+      "links": [
+        {
+          "name": "Instagram",
+          "href": "https://www.instagram.com/raysen_soft/",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "IMAS — Investment Management Automation System",
+      "description": "An academic software project designed to support investment management workflows through a digital system.",
+      "image": "/img/imas.png",
+      "tags": [
+        "Software Development",
+        "Investment Management",
+        "Automation",
+        "Final Year Project"
+      ],
+      "links": [
+        {
+          "name": "Live Demo",
+          "href": "https://imas-vu-prod.vercel.app/",
+          "icon": "globe"
+        }
+      ]
+    }
+  ]
+}

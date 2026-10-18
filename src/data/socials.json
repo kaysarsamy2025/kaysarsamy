@@ -1,0 +1,40 @@
+
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/kaysarsamy",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/kaysarsamy2025",
+      "icon": "github"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/kaysar.samy/",
+      "icon": "instagram"
+    },
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com/kaysar.samy/",
+      "icon": "facebook"
+    },
+    {
+      "name": "WhatsApp",
+      "href": "https://wa.me/8801760107748",
+      "icon": "message-circle"
+    },
+    {
+      "name": "Phone",
+      "href": "tel:+8801760107748",
+      "icon": "phone"
+    },
+    {
+      "name": "Website",
+      "href": "https://www.ksdigitalbd.com/",
+      "icon": "globe"
+    }
+  ]
+}

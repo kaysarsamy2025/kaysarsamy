@@ -1,0 +1,17 @@
+
+{
+  "introduction": {
+    "greeting": "Hi, I'm Kaysar Samy 👋",
+    "description": "Founder, Technology Business Builder, and Digital Entrepreneur. I help businesses build impactful websites, mobile apps, software, and AI-powered solutions through technology, creativity, and strategic thinking.",
+    "chatPrompt": "Have a project or business idea? Let's talk.",
+    "escalation": {
+      "text": "For business inquiries, please contact me via",
+      "linkText": "email",
+      "suffix": "."
+    }
+  },
+  "escalationLink": {
+    "href": "mailto:hello@kaysarsamy.com",
+    "title": "Contact Kaysar Samy"
+  }
+}
