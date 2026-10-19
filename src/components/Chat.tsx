@@ -73,7 +73,7 @@ export default function Chat() {
       >
         <AccordionItem
           value="item-1"
-          className="fixed bottom-4 right-4 w-[320px] rounded-lg border bg-background shadow-lg shadow-black/10 sm:bottom-8 sm:right-8 sm:w-96 dark:shadow-black/30"
+          className="fixed bottom-4 right-4 z-40 w-[min(92vw,420px)] max-w-[420px] rounded-lg border bg-background shadow-lg shadow-black/10 sm:bottom-8 sm:right-8 dark:shadow-black/30"
         >
           <AccordionTrigger className="border-b px-6">
             <ChatHeader />
@@ -86,7 +86,7 @@ export default function Chat() {
               <div
                 className={
                   isExpanded
-                    ? "flex max-h-[400px] min-h-[350px] flex-col justify-between rounded-b-lg sm:max-h-[500px] sm:min-h-[400px]"
+                    ? "flex max-h-[min(76vh,560px)] min-h-[280px] flex-col justify-between overflow-hidden rounded-b-lg"
                     : "hidden"
                 }
               >

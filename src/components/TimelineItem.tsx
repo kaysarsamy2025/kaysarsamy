@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { Experience } from "@/lib/schemas";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/Avatar";
@@ -10,6 +13,8 @@ interface Props {
 
 export default function TimelineItem({ experience }: Props) {
   const { name, href, logo, positions } = experience;
+  const [hasImageError, setHasImageError] = useState(false);
+  const shouldShowFallback = !logo || hasImageError;
 
   return (
     <li className="relative ml-10 py-4">
@@ -19,15 +24,22 @@ export default function TimelineItem({ experience }: Props) {
         rel="noreferrer"
         className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white"
       >
-        <Avatar className="size-12 border">
-          <AvatarImage
-            src={logo}
-            alt={name}
-            loading="lazy"
-            decoding="async"
-            className="bg-background object-contain"
-          />
-          <AvatarFallback>{name[0]}</AvatarFallback>
+        <Avatar className="size-12 overflow-hidden border bg-muted/80 p-1.5">
+          {!shouldShowFallback && (
+            <AvatarImage
+              src={logo}
+              alt={`${name} company logo`}
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full rounded-full bg-background object-contain"
+              onError={() => setHasImageError(true)}
+            />
+          )}
+          {shouldShowFallback && (
+            <AvatarFallback className="bg-muted text-[0.625rem] font-semibold text-foreground">
+              {name[0]}
+            </AvatarFallback>
+          )}
         </Avatar>
       </Link>
       <div className="flex flex-1 flex-col justify-start gap-2">

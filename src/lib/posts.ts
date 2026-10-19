@@ -17,8 +17,8 @@ export type PostDetail = PostSummary & {
   content: string;
 };
 
-const TACOS_API_URL = process.env.TACOS_API_URL || "http://localhost:8000";
-const TACOS_API_KEY = process.env.TACOS_API_KEY || "";
+const TACOS_API_URL = process.env.TACOS_API_URL?.trim();
+const TACOS_API_KEY = process.env.TACOS_API_KEY?.trim() || "";
 const POSTS_REVALIDATE_SECONDS = 600;
 
 type FetchWithApiKeyOptions = {
@@ -30,6 +30,10 @@ const fetchWithApiKey = async (
   url: string,
   options: FetchWithApiKeyOptions = {},
 ) => {
+  if (!TACOS_API_URL) {
+    throw new Error("TACOS_API_URL is not configured.");
+  }
+
   const { tags, revalidateSeconds } = options;
   const res = await fetch(url, {
     ...(process.env.NODE_ENV === "production"
@@ -52,6 +56,11 @@ const fetchWithApiKey = async (
 };
 
 export async function getPosts(limit?: number): Promise<PostSummary[]> {
+  if (!TACOS_API_URL) {
+    console.warn("[posts] TACOS_API_URL is not configured. Returning empty post list.");
+    return [];
+  }
+
   try {
     const posts: PostSummary[] = await fetchWithApiKey(
       `${TACOS_API_URL}/posts`,
@@ -66,6 +75,11 @@ export async function getPosts(limit?: number): Promise<PostSummary[]> {
 }
 
 export async function getPostBySlug(slug: string): Promise<PostDetail | null> {
+  if (!TACOS_API_URL) {
+    console.warn(`[posts] TACOS_API_URL is not configured. Post ${slug} unavailable.`);
+    return null;
+  }
+
   try {
     const post: PostDetail = await fetchWithApiKey(
       `${TACOS_API_URL}/posts/${slug}`,

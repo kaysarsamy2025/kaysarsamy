@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 0.0.0.0 --turbo",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -30,7 +30,6 @@
     "dotenv": "^16.4.5",
     "framer-motion": "^12.23.12",
     "gray-matter": "^4.0.3",
-    "langchain": "^0.3.2",
     "lucide-react": "^0.441.0",
     "mermaid": "^10.9.1",
     "next": "14.2.35",

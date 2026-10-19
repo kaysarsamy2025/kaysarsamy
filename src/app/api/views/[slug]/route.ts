@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-const TACOS_API_URL = process.env.TACOS_API_URL || "http://localhost:8000";
-const TACOS_API_KEY = process.env.TACOS_API_KEY || "";
+const TACOS_API_URL = process.env.TACOS_API_URL?.trim();
+const TACOS_API_KEY = process.env.TACOS_API_KEY?.trim() || "";
 
 export async function POST(
   _req: Request,
@@ -16,7 +16,7 @@ export async function POST(
   if (!TACOS_API_URL || !TACOS_API_KEY) {
     return NextResponse.json(
       { error: "Backend configuration missing" },
-      { status: 500 },
+      { status: 503 },
     );
   }
 
